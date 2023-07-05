@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* common class */
+h1{
+  margin: 0;
+}
+
+h5{
+  margin: 0;
+  padding-top: 10px;
+}
+
+p{
+  margin: 0;
+}
+.flex{
+  display: flex;
+}
+.fullWidth{
+  width: 100%;
+}
+.backColor{
+  background: #d0d7de !important;
+}
+.flexGap{
+  gap: 20px;
+}
+
+
+/* select Menu */
+.selectMenu{
+  display: flex !important;
+  width: 15%;
+  margin: 30px auto !important;
+}
+
+
+/* container */
+.container{
+  margin-top: 80px;
+}
+.accordion{
+  margin-bottom: 20px;
+}
+
+
+/* image Div */
+.imgDiv{
+  justify-content: center;
+  align-items: center;
+}
+.avtarImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+
+/* Content Div */
+.contentDiv{
+  width: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.starIssueDiv{
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.starUl{
+  gap: 60px;
+  padding: 0;
+}
+.starIssueDiv ul{
+  gap: 60px;
+  padding: 0;
+}
+.starIssueDiv ul li{
+  border: 1px solid #000;
+  padding: 5px 25px;
+  list-style: none;
+  border-radius: 10px;
+}
+
+/* Spinner component */
+
+.spinner {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.spinner-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner-rotate 1s infinite linear;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spinner-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
